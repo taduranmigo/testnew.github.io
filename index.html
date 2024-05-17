@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form>
+        <ul>
+            <li>
+                <label for="name">Your name</label><br>
+                <input type="text" id="name" name="name" required>
+            </li>
+            <li>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" required>
+            </li>
+            <li>
+                <label for="contact">Contact number</label><br>
+                <input type="text" id="contact" name="contact">
+            </li>
+            <li>
+                <label for="message">Message <span>*</span></label><br>
+                <textarea id="message" name="message" required></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Send">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
